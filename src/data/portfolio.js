@@ -7,9 +7,9 @@ export const personalInfo = {
   bio: 'Passionate front-end developer specializing in React.js, responsive UI design, and smooth animations. I love building products that feel premium and perform flawlessly.',
   aboutExtended:
     "I'm a front-end developer with a keen eye for design and a passion for creating beautiful, functional web applications. From responsive layouts to micro-interactions, I focus on every detail that elevates the user experience.",
-  location: 'Goa, India',
-  email: 'samir.machrekar@gmail.com',
-  phone: '+91 98765 43210',
+  location: 'Sangamner , Maharashtra, India',
+  email: 'samirmacharekar@gmail.com',
+  phone: '+91 7796094625',
   availability: 'Open to Work',
   cvUrl: '#',
 }
