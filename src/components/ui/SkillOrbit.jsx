@@ -50,39 +50,36 @@ const skillIcons = {
 export default function SkillOrbit({ category = "Frontend" }) {
   const skills = skillsByCategory[category] || [];
 
-  const size = 360;
+  const size = 320;
   const cx = size / 2;
   const cy = size / 2;
-  const radius = 120;
+  const radius = 108;
+
+  const getPoint = (angle) => {
+    const rad = (angle * Math.PI) / 180;
+    return {
+      x: cx + Math.cos(rad) * radius,
+      y: cy + Math.sin(rad) * radius,
+    };
+  };
+
+  const getPositionStyle = (angle) => {
+    const { x, y } = getPoint(angle);
+    return {
+      left: `${(x / size) * 100}%`,
+      top: `${(y / size) * 100}%`,
+    };
+  };
 
   return (
-    <div
-      className="relative mx-auto flex items-center justify-center"
-      style={{
-        width: size,
-        height: size,
-        maxWidth: "100%",
-      }}
-    >
-      {/* Orbit Background */}
+    <div className="relative mx-auto w-full max-w-[320px] aspect-square">
       <div className="absolute inset-0 rounded-full border border-primary/10 bg-primary/5 animate-pulse-glow" />
-      <div
-        className="absolute rounded-full border border-dashed border-secondary/25"
-        style={{ inset: "2rem" }}
-      />
-      <div
-        className="absolute rounded-full border border-violet/15"
-        style={{ inset: "3.5rem" }}
-      />
+      <div className="absolute inset-[2rem] rounded-full border border-dashed border-secondary/25" />
+      <div className="absolute inset-[3.5rem] rounded-full border border-violet/15" />
 
-      {/* Center Circle */}
-      <div className="absolute h-14 w-14 rounded-full bg-gradient-to-br from-primary to-secondary shadow-[0_0_40px_rgba(45,212,191,0.5)]" />
+      <div className="absolute left-1/2 top-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-primary to-secondary shadow-[0_0_40px_rgba(45,212,191,0.5)] sm:h-14 sm:w-14" />
 
-      {/* Orbit Lines */}
-      <svg
-        className="absolute inset-0 h-full w-full pointer-events-none"
-        viewBox={`0 0 ${size} ${size}`}
-      >
+      <svg className="absolute inset-0 h-full w-full pointer-events-none" viewBox={`0 0 ${size} ${size}`}>
         <defs>
           <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#2dd4bf" />
@@ -92,10 +89,7 @@ export default function SkillOrbit({ category = "Frontend" }) {
 
         {skills.map((_, i) => {
           const angle = (i / skills.length) * 360 - 90;
-          const rad = (angle * Math.PI) / 180;
-          const x = cx + Math.cos(rad) * radius;
-          const y = cy + Math.sin(rad) * radius;
-
+          const { x, y } = getPoint(angle);
           return (
             <line
               key={i}
@@ -111,22 +105,17 @@ export default function SkillOrbit({ category = "Frontend" }) {
         })}
       </svg>
 
-      {/* Skill Icons */}
       {skills.map((skill, i) => {
         const angle = (i / skills.length) * 360 - 90;
-        const rad = (angle * Math.PI) / 180;
-
-        const x = cx + Math.cos(rad) * radius;
-        const y = cy + Math.sin(rad) * radius;
-
+        const position = getPositionStyle(angle);
         return (
           <div
             key={skill.name}
             title={skill.name}
             className="absolute flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-bg-card/80 backdrop-blur-sm shadow-[0_0_20px_rgba(45,212,191,0.15)] hover:scale-110 transition-all duration-300"
             style={{
-              left: x,
-              top: y,
+              left: position.left,
+              top: position.top,
               transform: "translate(-50%, -50%)",
             }}
           >

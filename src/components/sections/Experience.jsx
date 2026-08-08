@@ -24,15 +24,16 @@ export default function Experience() {
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.12 }}
-              className="relative mb-8 flex gap-5 md:mb-10 md:gap-8"
+              className="relative mb-8 flex flex-col gap-5 md:mb-10 md:gap-8 md:flex-row md:pl-[118px] pl-10"
             >
-              <div className="w-[100px] flex-shrink-0 pt-1 md:w-[118px]">
+              <div className="w-full flex-shrink-0 pt-1 md:w-[118px]">
                 <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-2 text-[11px] font-semibold text-primary whitespace-nowrap shadow-[0_0_16px_rgba(45,212,191,0.12)]">
                   {item.period}
                 </span>
               </div>
 
-              <div className="absolute left-[100px] top-5 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_12px_#2DD4BF] md:left-[118px]" />
+              <div className="absolute top-0 bottom-0 left-6 w-px bg-gradient-to-b from-primary/40 via-secondary/20 to-transparent md:left-[118px]" />
+              <div className="absolute left-6 top-5 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_12px_#2DD4BF] md:left-[118px]" />
 
               <div className="flex-1">
                 <GlassCard className="p-5 md:p-6">

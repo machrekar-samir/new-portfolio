@@ -6,7 +6,8 @@ export default function TopNavbar() {
   const topLinks = navLinks.filter((l) => l.id !== 'contact')
 
   return (
-<header className="fixed top-0 left-0 right-0 z-50 hidden border-b border-white/5 glass-strong lg:block">      <div className="mx-auto flex max-w-[1500px] items-center justify-between px-8 py-4">
+<header className="fixed top-0 left-0 right-0 z-50 hidden border-b border-white/5 glass-strong lg:block">
+      <div className="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-3.5 sm:px-6 sm:py-4 lg:px-8">
         <NavLink to="/" className="font-poppins text-xl font-bold text-white">
           {personalInfo.firstName}
           <span className="text-primary">.</span>

@@ -35,7 +35,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <motion.div layout className="grid gap-5 sm:grid-cols-2">
+        <motion.div layout className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filtered.map((project, i) => (
               <motion.div

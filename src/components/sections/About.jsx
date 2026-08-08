@@ -55,13 +55,13 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="relative mx-auto w-full max-w-sm lg:mx-0"
           >
-            <div className="relative ">
-              <div className=" border-b-6 border-cyan-400 overflow-hidden rounded-2xl w-90 h-full object-cover object-center ">
+            <div className="relative">
+              <div className="border-b-6 border-cyan-400 overflow-hidden rounded-2xl w-full object-cover object-center">
                 <div className="relative flex items-end justify-center">
                   <img
                     src={profilePhoto}
                     alt="About me"
-                    className="w-full h-[380px]  object-contain object-bottom"
+                    className="w-full h-[300px] object-contain object-bottom sm:h-[340px] md:h-[380px]"
                   />
                 </div>
               </div>
