@@ -11,7 +11,7 @@ export const personalInfo = {
   email: 'samirmacharekar@gmail.com',
   phone: '+91 7796094625',
   availability: 'Open to Work',
-  cvUrl: '#',
+cvUrl: '/Machrekar_Sameer-resume.pdf',
 }
 
 export const navLinks = [
@@ -25,11 +25,10 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { name: 'GitHub', url: 'https://github.com', icon: 'github' },
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'linkedin' },
-  { name: 'Instagram', url: 'https://instagram.com', icon: 'instagram' },
-  { name: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },
-]
+  { name: 'GitHub', url: 'https://github.com/machrekar-samir', icon: 'github' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/samir-machrekar-a975212b0/', icon: 'linkedin' },
+  { name: 'Instagram', url: 'https://www.instagram.com/machrekar_samir?igsh=MXQyeHNsc3ZsN2lzag%3D%3D&utm_source=qr', icon: 'instagram' },
+{ name: 'WhatsApp', url: 'https://wa.me/917796094625', icon: 'whatsapp' },]
 
 export const stats = [
   { label: 'Projects Completed', value: '15+' },
@@ -43,15 +42,15 @@ export const skillCategories = ['Frontend', 'Backend', 'Tools', 'Others']
 export const skillsByCategory = {
   Frontend: [
     { name: 'React.js', level: 90, icon: 'react' },
-    { name: 'JavaScript', level: 85, icon: 'js' },
-    { name: 'HTML5', level: 95, icon: 'html' },
-    { name: 'CSS3', level: 90, icon: 'css' },
-    { name: 'Tailwind CSS', level: 88, icon: 'tailwind' },
+    { name: 'JavaScript', level: 80, icon: 'js' },
+    { name: 'HTML5', level: 100, icon: 'html' },
+    { name: 'CSS3', level: 100, icon: 'css' },
+    { name: 'Tailwind CSS', level: 100, icon: 'tailwind' },
   ],
   Backend: [
-    { name: 'Node.js', level: 75, icon: 'node' },
-    { name: 'Express.js', level: 70, icon: 'express' },
-    { name: 'MongoDB', level: 65, icon: 'mongo' },
+{ name: 'MySQL', level: 75, icon: 'mysql' },
+    { name: 'SQLite', level: 60, icon: 'sqlite' },
+    { name: 'Supabase', level: 80, icon: 'supabase' },
   ],
   Tools: [
     { name: 'Git', level: 85, icon: 'git' },
@@ -59,8 +58,10 @@ export const skillsByCategory = {
     { name: 'VS Code', level: 92, icon: 'vscode' },
   ],
   Others: [
-    { name: 'Framer Motion', level: 82, icon: 'motion' },
-    { name: 'REST APIs', level: 78, icon: 'api' },
+     { name: 'C', level: 82, icon: 'c' },
+  { name: 'C++', level: 85, icon: 'cpp' },
+  { name: 'PHP', level: 70, icon: 'php' },
+  // { name: 'JAVA', level: 75, icon: 'java' },
   ],
 }
 
@@ -88,12 +89,43 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'SMS Cinemas',
+    title: 'GGSf College Website',
     description:
-      'Cinema ticket booking platform with seat selection, showtimes, and online payment integration.',
+      'A responsive college website with academic information, campus details, events, and student resources.',
     category: 'Web Apps',
-    image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&h=400&fit=crop',
-    tags: ['React', 'Firebase', 'Tailwind CSS'],
+    image: 'https://media.istockphoto.com/id/1461631542/photo/group-of-happy-students-having-chat-with-talking-each-other-while-sitting-on-college-campus.jpg?s=612x612&w=0&k=20&c=nB1wuPB-JuX3YIdoNSJDRgolfbiqQu2Tjj_kdUor_pE=',
+    tags: ['React', 'Supabase', 'Tailwind CSS'],
+    url: 'https://ggsf-official.netlify.app/#/',
+  },
+  {
+    id: 6,
+    title: 'Codewitzzs Home page Design  ',
+    description:
+      'A modern e-learning platform featuring tech courses, internships, gamified learning, mentorship, and career resources.',
+    category: 'E-learning',
+    image: 'https://plus.unsplash.com/premium_photo-1661771564227-1d8484e32c8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGUtbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D',
+    tags: ['HTML', '', ' CSS'],
+    url: 'https://codewttz-front-end.netlify.app/',
+  },
+  // {
+  //   id: 2,
+  //   title: 'SMS Cinemas',
+  //   description:
+  //     'Cinema ticket booking platform with seat selection, showtimes, and online payment integration.',
+  //   category: 'Web Apps',
+  //   image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&h=400&fit=crop',
+  //   tags: ['React', 'Firebase', 'Tailwind CSS'],
+  //   url: '#',
+  // },
+  
+  {
+    id: 4,
+    title: 'TeaKhata',
+    description:
+      '**TeaKhata** is a smart credit management app for tracking customers, udhari, payments, and reminders.',
+    category: 'E-commerce',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8fDA%3D',
+    tags: ['React', 'Tailwind CSS', 'JavaScript'],
     url: '#',
   },
   {
@@ -107,15 +139,36 @@ export const projects = [
     url: '#',
   },
   {
-    id: 4,
-    title: 'Tea House',
+    id: 5,
+    title: 'Calculator',
     description:
-      'E-commerce landing page for a premium tea brand with product showcase and ordering.',
-    category: 'E-commerce',
-    image: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&h=400&fit=crop',
-    tags: ['React', 'Tailwind CSS', 'Stripe'],
-    url: '#',
+      'A simple and responsive calculator for performing basic arithmetic operations with an intuitive user interface.',
+    category: 'Web Apps',
+    image: 'https://plus.unsplash.com/premium_photo-1661311947753-065ef4af9087?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D',
+    tags: ['HTML', 'CSS5', 'JS'],
+    url: 'https://samir-calculator.netlify.app/',
   },
+  
+  {
+    id: 7,
+    title: 'Apple iPhone Landing Page Design',
+    description:
+      'A modern and responsive landing page with a clean design, engaging visuals, and user-friendly layout.',
+    category: 'Landing Pages',
+    image: 'https://images.unsplash.com/photo-1603791239531-1dda55e194a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFwcGxlJTIwaXBob25lJTIwbGFuZGluZyUyMHBhZ2V8ZW58MHx8MHx8fDA%3D',
+    tags: ['HTML', 'CSS', 'JS'],
+    url: 'https://samir-landing-page.netlify.app/',
+  },
+  // {
+  //   id: 8,
+  //   title: 'LaunchKit',
+  //   description:
+  //     'A conversion-focused startup landing page built for lead capture, product highlights, and testimonials.',
+  //   category: 'Landing Pages',
+  //   image: '',
+  //   tags: ['React', 'CSS', 'A11y'],
+  //   url: '#',
+  // },
 ]
 
 export const experience = [

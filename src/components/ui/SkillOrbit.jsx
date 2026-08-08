@@ -1,4 +1,5 @@
 import { skillsByCategory } from "../../data/portfolio";
+import { VscVscode } from "react-icons/vsc";
 
 import {
   FaReact,
@@ -8,6 +9,7 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaFigma,
+  
 } from "react-icons/fa";
 
 import {
@@ -15,9 +17,13 @@ import {
   SiExpress,
   SiMongodb,
   SiFramer,
+  SiMysql,
+  SiSqlite,
+  SiSupabase,
+  SiC,
+  SiCplusplus,
+  SiPhp,
 } from "react-icons/si";
-
-import { VscVscode } from "react-icons/vsc";
 
 const skillIcons = {
   react: <FaReact className="text-cyan-400 text-3xl" />,
@@ -32,6 +38,13 @@ const skillIcons = {
   figma: <FaFigma className="text-pink-500 text-3xl" />,
   vscode: <VscVscode className="text-blue-500 text-3xl" />,
   motion: <SiFramer className="text-purple-500 text-3xl" />,
+  mysql: <SiMysql className="text-orange-400 text-3xl" />,
+  sqlite: <SiSqlite className="text-blue-400 text-3xl" />,
+  supabase: <SiSupabase className="text-green-400 text-3xl" />,
+  c: <SiC className="text-blue-500 text-3xl" />,
+  cpp: <SiCplusplus className="text-blue-500 text-3xl" />,
+  php: <SiPhp className="text-indigo-400 text-3xl" />,
+ 
 };
 
 export default function SkillOrbit({ category = "Frontend" }) {
@@ -71,13 +84,7 @@ export default function SkillOrbit({ category = "Frontend" }) {
         viewBox={`0 0 ${size} ${size}`}
       >
         <defs>
-          <linearGradient
-            id="orbitGrad"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="100%"
-          >
+          <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#2dd4bf" />
             <stop offset="100%" stopColor="#6366f1" />
           </linearGradient>
