@@ -1,15 +1,20 @@
-import { motion } from 'framer-motion'
-import { MapPin, Mail, User, Clock } from 'lucide-react'
-import { personalInfo, stats } from '../../data/portfolio'
-import SectionHeading from '../ui/SectionHeading'
-import GlassCard from '../ui/GlassCard'
+import { motion } from "framer-motion";
+import { MapPin, Mail, User, Clock } from "lucide-react";
+import { personalInfo, stats } from "../../data/portfolio";
+import SectionHeading from "../ui/SectionHeading";
+import GlassCard from "../ui/GlassCard";
+import profilePhoto from "../../assets/profile-photo-removebg-preview.png";
 
 const infoItems = [
-  { icon: User, label: 'Name', value: `${personalInfo.firstName} ${personalInfo.lastName}` },
-  { icon: Mail, label: 'Email', value: personalInfo.email },
-  { icon: MapPin, label: 'Location', value: personalInfo.location },
-  { icon: Clock, label: 'Availability', value: personalInfo.availability },
-]
+  {
+    icon: User,
+    label: "Name",
+    value: `${personalInfo.firstName} ${personalInfo.lastName}`,
+  },
+  { icon: Mail, label: "Email", value: personalInfo.email },
+  { icon: MapPin, label: "Location", value: personalInfo.location },
+  { icon: Clock, label: "Availability", value: personalInfo.availability },
+];
 
 export default function About() {
   return (
@@ -23,7 +28,7 @@ export default function About() {
               subtitle={personalInfo.aboutExtended}
             />
 
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 ">
               {infoItems.map(({ icon: Icon, label, value }, i) => (
                 <motion.div
                   key={label}
@@ -50,14 +55,15 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="relative mx-auto w-full max-w-sm lg:mx-0"
           >
-            <div className="absolute -inset-4 blob-glow bg-primary/10 blur-xl" />
-            <div className="relative">
-              <div className="blob-frame overflow-hidden border border-primary/30 glow-ring">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face"
-                  alt="About me"
-                  className="h-[300px] w-full object-cover sm:h-[340px]"
-                />
+            <div className="relative ">
+              <div className=" border-b-6 border-cyan-400 overflow-hidden rounded-2xl w-90 h-full object-cover object-center ">
+                <div className="relative flex items-end justify-center">
+                  <img
+                    src={profilePhoto}
+                    alt="About me"
+                    className="w-full h-[380px]  object-contain object-bottom"
+                  />
+                </div>
               </div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -65,7 +71,9 @@ export default function About() {
                 transition={{ delay: 0.4 }}
                 className="absolute -bottom-4 -right-4 rounded-2xl border border-primary/20 bg-bg-card/90 px-5 py-4 backdrop-blur-xl glow-primary"
               >
-                <p className="font-poppins text-2xl font-bold text-primary">1+</p>
+                <p className="font-poppins text-2xl font-bold text-primary">
+                  1+
+                </p>
                 <p className="text-xs text-muted">Years Experience</p>
               </motion.div>
             </div>
@@ -81,7 +89,9 @@ export default function About() {
               transition={{ delay: 0.2 + i * 0.08 }}
             >
               <GlassCard className="p-5 text-center sm:p-6" hover>
-                <p className="font-poppins text-3xl font-bold text-gradient md:text-4xl">{value}</p>
+                <p className="font-poppins text-3xl font-bold text-gradient md:text-4xl">
+                  {value}
+                </p>
                 <p className="mt-2 text-xs text-muted sm:text-sm">{label}</p>
               </GlassCard>
             </motion.div>
@@ -89,5 +99,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }

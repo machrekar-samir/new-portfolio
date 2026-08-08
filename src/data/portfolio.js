@@ -15,13 +15,13 @@ export const personalInfo = {
 }
 
 export const navLinks = [
-  { id: 'home', label: 'Home', path: '/', number: '01' },
-  { id: 'about', label: 'About', path: '/about', number: '02' },
-  { id: 'skills', label: 'Skills', path: '/skills', number: '03' },
-  { id: 'projects', label: 'Projects', path: '/projects', number: '04' },
-  { id: 'experience', label: 'Experience', path: '/experience', number: '05' },
-  { id: 'blog', label: 'Blog', path: '/blog', number: '06' },
-  { id: 'contact', label: 'Contact', path: '/contact', number: '07' },
+  { id: 'home', label: 'Home', path: '/', number:'●' },
+  { id: 'about', label: 'About', path: '/about', number:'●' },
+  { id: 'skills', label: 'Skills', path: '/skills', number:'●' },
+  { id: 'projects', label: 'Projects', path: '/projects', number:'●' },
+  { id: 'experience', label: 'Experience', path: '/experience', number:'●' },
+  { id: 'blog', label: 'Blog', path: '/blog', number:'●'  },
+  { id: 'contact', label: 'Contact', path: '/contact', number:'●'  },
 ]
 
 export const socialLinks = [
