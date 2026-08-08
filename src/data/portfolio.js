@@ -20,7 +20,7 @@ export const navLinks = [
   { id: 'skills', label: 'Skills', path: '/skills', number:'●' },
   { id: 'projects', label: 'Projects', path: '/projects', number:'●' },
   { id: 'experience', label: 'Experience', path: '/experience', number:'●' },
-  { id: 'blog', label: 'Blog', path: '/blog', number:'●'  },
+  { id: 'Certifications', label: 'Certifications', path: '/blog', number:'●'  },
   { id: 'contact', label: 'Contact', path: '/contact', number:'●'  },
 ]
 
@@ -84,7 +84,7 @@ export const projects = [
       'A modern e-learning marketplace with course browsing, cart, and seamless checkout.',
     category: 'Web Apps',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop',
-    tags: ['React', 'Tailwind CSS', 'Node.js'],
+    tags: ['React', 'Tailwind CSS', 'JavaScript'],
     url: '#',
   },
   {
@@ -104,7 +104,7 @@ export const projects = [
       'A modern e-learning platform featuring tech courses, internships, gamified learning, mentorship, and career resources.',
     category: 'E-learning',
     image: 'https://plus.unsplash.com/premium_photo-1661771564227-1d8484e32c8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGUtbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D',
-    tags: ['HTML', '', ' CSS'],
+    tags: ['HTML', 'JavaScript', ' CSS'],
     url: 'https://codewttz-front-end.netlify.app/',
   },
   // {
@@ -174,61 +174,118 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    role: 'Front-end Developer (Intern)',
-    company: 'TechNova Solutions',
-    period: '2024 - Present',
+    role: 'Front-end Developer ',
+    company: 'Codewitzz',
+    period: '1+ Year',
     description:
       'Building responsive web applications using React.js and Tailwind CSS. Collaborating with designers to implement pixel-perfect UI components and smooth animations.',
     tags: ['React', 'Tailwind CSS', 'JavaScript'],
   },
   {
     id: 2,
-    role: 'Web Developer (Freelance)',
-    company: 'Self Employed',
+    role: 'Full Stack  Developer (Intern)',
+    company: 'TechnoGrowth Software Solutions',
     period: '2023 - 2024',
     description:
-      'Developed custom websites and landing pages for small businesses. Managed full project lifecycle from design to deployment.',
+      ' I have completed the full stack Java Development internship and gather handful of experience from it. Now I am able to build the full stack application using Spring Boot and Angular .',
     tags: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 3,
-    role: 'Front-end Developer (Intern)',
-    company: 'Digital Craft Studio',
-    period: '2023',
+    role: 'Web Developer (Intern)',
+    company: 'CodeSoft Technologies',
+    period: '2024',
     description:
-      'Assisted in building client-facing web applications. Learned modern front-end workflows and version control with Git.',
-    tags: ['React', 'CSS3', 'Git'],
+      'Successfully completed a 4-week virtual Web Development internship at CodSoft, gaining practical experience through real-world tasks and projects.',
+    tags: ['HTML', 'CSS3', 'JavaScript'],
   },
 ]
 
-export const blogPosts = [
+// export const blogPosts = [
+//   {
+//     id: 1,
+//     title: 'Getting Started with React Hooks',
+//     excerpt:
+//       'A comprehensive guide to useState, useEffect, and custom hooks for modern React development.',
+//     date: 'Jul 15, 2026',
+//     readTime: '5 min read',
+//     image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=340&fit=crop',
+//     category: 'React',
+//   },
+//   {
+//     id: 2,
+//     title: 'Mastering Tailwind CSS in 2026',
+//     excerpt:
+//       'Tips and tricks for building beautiful, responsive UIs faster with Tailwind CSS utility classes.',
+//     date: 'Jun 28, 2026',
+//     readTime: '7 min read',
+//     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=340&fit=crop',
+//     category: 'CSS',
+//   },
+//   {
+//     id: 3,
+//     title: 'Building Accessible Web Apps',
+//     excerpt: 'Best practices for creating inclusive web experiences that work for everyone.',
+//     date: 'Jun 10, 2026',
+//     readTime: '6 min read',
+//     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=340&fit=crop',
+//     category: 'A11y',
+//   },
+// ]
+
+export const certificates = [
   {
     id: 1,
-    title: 'Getting Started with React Hooks',
-    excerpt:
-      'A comprehensive guide to useState, useEffect, and custom hooks for modern React development.',
-    date: 'Jul 15, 2026',
-    readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=340&fit=crop',
-    category: 'React',
+    title: 'React Developer Certification',
+    issuer: 'Codewitzz',
+    date: ' July 2026',
+    image: 'https://img-c.udemycdn.com/course/240x135/7204447_8891.jpg',
+    category: 'Frontend',
+    url: '/certificates/codewittz.pdf',
   },
   {
     id: 2,
-    title: 'Mastering Tailwind CSS in 2026',
-    excerpt:
-      'Tips and tricks for building beautiful, responsive UIs faster with Tailwind CSS utility classes.',
-    date: 'Jun 28, 2026',
-    readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=340&fit=crop',
-    category: 'CSS',
+    title: 'Web Developer Certification',
+    issuer: 'Codesoft Technologies',
+    date: 'March 2024',
+    image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/web_developer_certificationsb.jpg',
+    category: 'Design Webpages',
+    url: '/certificates/Codesoft.pdf',
   },
   {
     id: 3,
-    title: 'Building Accessible Web Apps',
-    excerpt: 'Best practices for creating inclusive web experiences that work for everyone.',
-    date: 'Jun 10, 2026',
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=340&fit=crop',
-    category: 'A11y',
+    title: 'Full Stack Development Certification',
+    issuer: 'TechnoGrowth Software Solutions',
+    date: 'June 2024',
+    image: 'https://miro.medium.com/0*A2s5TI5LrD6UPRQt.jpg',
+    category: 'Full Stack',
+    url: '/certificates/TechnoGrowth.pdf',
+  },
+  {
+    id: 4,
+    title: 'Genrative AI for Executives',
+    issuer: 'Amezon',
+    date: 'January 2024',
+    image: 'https://img-c.udemycdn.com/course/480x270/6595497_64d5.jpg?w=3840&q=75',
+    category: 'AI',
+    url: '/certificates/aws.pdf',
+  },
+   {
+    id: 5,
+    title: 'Beginner HTML and CSS: Build your own personal blog',
+    issuer: 'Infosys',
+    date: 'January 2024',
+    image: 'https://img-c.udemycdn.com/course/480x270/3339492_8fe4.jpg',
+    category: 'Web Development',
+    url: '/certificates/infosys.pdf',
+  },
+  {
+    id: 5,
+    title: 'Java Programming',
+    issuer: 'Great Learning',
+    date: 'January 2024',
+    image: 'https://media.licdn.com/dms/image/v2/D4D12AQEj_skZvxBLHg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1697271137370?e=2147483647&v=beta&t=i67kZ1f9MKbxtAfTLlThSa2AQGhAkEASNQbBP_RTtLc',
+    category: 'Web Development',
+    url: '/certificates/java.pdf',
   },
 ]
