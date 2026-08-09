@@ -171,7 +171,7 @@ export default function Hero() {
         >
           <GlassCard className="overflow-hidden rounded-[1.5rem] p-0" hover={false}>
             <div className="flex flex-col md:flex-row">
-              <div className="flex flex-1 flex-col justify-center p-5 text-center sm:p-6 md:p-8 md:text-left">
+              <div className="order-last flex flex-1 flex-col justify-center p-5 text-center sm:p-6 md:order-none md:p-8 md:text-left">
                 <span className="mb-2 text-xs font-medium tracking-widest text-primary uppercase">
                   Featured Project
                 </span>
@@ -199,7 +199,7 @@ export default function Hero() {
                   <ArrowUpRight size={16} />
                 </a>
               </div>
-              <div className="relative h-48 overflow-hidden sm:h-56 md:h-auto md:w-[42%]">
+              <div className="order-first relative h-48 overflow-hidden sm:h-56 md:order-none md:h-auto md:w-[42%]">
                 <img
                   src={featuredProject.image}
                   alt={featuredProject.title}

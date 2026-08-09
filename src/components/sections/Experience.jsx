@@ -16,7 +16,7 @@ export default function Experience() {
         />
 
         <div className="relative mx-auto max-w-3xl">
-          <div className="absolute top-0 bottom-0 left-[100px] w-px bg-gradient-to-b from-primary/40 via-secondary/20 to-transparent md:left-[118px]" />
+          <div className="absolute top-0 bottom-0 left-3 w-px bg-gradient-to-b from-primary/40 via-secondary/20 to-transparent md:left-[118px]" />
 
           {experience.map((item, i) => (
             <motion.div
@@ -24,18 +24,18 @@ export default function Experience() {
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.12 }}
-              className="relative mb-8 flex flex-col gap-5 md:mb-10 md:gap-8 md:flex-row md:pl-[118px] pl-10"
+              className="relative mb-10 md:mb-12 md:flex md:flex-row md:pl-[180px]"
             >
-              <div className="w-full flex-shrink-0 pt-1 md:w-[118px]">
+              <div className="mb-3 md:mb-0 md:absolute md:-left-20 md:top-0 md:w-[118px] md:flex-shrink-0 md:pt-1">
                 <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-2 text-[11px] font-semibold text-primary whitespace-nowrap shadow-[0_0_16px_rgba(45,212,191,0.12)]">
                   {item.period}
                 </span>
               </div>
 
-              <div className="absolute top-0 bottom-0 left-6 w-px bg-gradient-to-b from-primary/40 via-secondary/20 to-transparent md:left-[118px]" />
-              <div className="absolute left-6 top-5 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_12px_#2DD4BF] md:left-[118px]" />
+              <div className="absolute top-0 bottom-0 left-3 w-px bg-gradient-to-b from-primary/40 via-secondary/20 to-transparent md:left-[118px]" />
+              <div className="absolute left-3 top-6 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_12px_#2DD4BF] md:left-[118px] md:top-5" />
 
-              <div className="flex-1">
+              <div className="flex-1 pl-12 md:pl-0">
                 <GlassCard className="p-5 md:p-6">
                   <div className="mb-3 flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
