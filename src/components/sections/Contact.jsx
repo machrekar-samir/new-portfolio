@@ -5,6 +5,7 @@ import { personalInfo, socialLinks } from '../../data/portfolio'
 import Button from '../ui/Button'
 import GlassCard from '../ui/GlassCard'
 import SocialIcons from '../ui/SocialIcons'
+import { supabase } from '../../lib/supabase'
 
 const contactDetails = [
   { icon: Mail, label: 'Email', value: personalInfo.email },
@@ -19,12 +20,35 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert('Message sent! (Demo mode)')
-    setForm({ name: '', email: '', subject: '', message: '' })
+ const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  const { error } = await supabase
+    .from('Contact_messages')
+    .insert([
+      {
+        Name: form.name,
+        Email: form.email,
+        Subject: form.subject,
+        message: form.message,
+      },
+    ])
+
+  if (error) {
+    console.error('Supabase error:', error)
+    alert('Message send nahi hua. Please try again.')
+    return
   }
 
+  alert('Message successfully sent!')
+
+  setForm({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+}
   const inputClass =
     'w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-muted/60 outline-none transition-all focus:border-primary/40 focus:shadow-[0_0_20px_rgba(45,212,191,0.08)]'
 
