@@ -11,7 +11,7 @@ export const personalInfo = {
   email: 'samirmacharekar@gmail.com',
   phone: '+91 7796094625',
   availability: 'Open to Work',
-cvUrl: '/Machrekar_Sameer-resume.pdf',
+cvUrl: '/Machrekar_Sameer-CV.pdf',
 }
 
 export const navLinks = [
