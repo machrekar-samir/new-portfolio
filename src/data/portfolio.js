@@ -95,7 +95,7 @@ export const projects = [
     category: 'Web Apps',
     image: 'https://media.istockphoto.com/id/1461631542/photo/group-of-happy-students-having-chat-with-talking-each-other-while-sitting-on-college-campus.jpg?s=612x612&w=0&k=20&c=nB1wuPB-JuX3YIdoNSJDRgolfbiqQu2Tjj_kdUor_pE=',
     tags: ['React', 'Supabase', 'Tailwind CSS'],
-    url: 'https://ggsf-official.netlify.app/#/',
+    url: 'https://ggsf-official-web.netlify.app/',
   },
    {
     id: 4,
