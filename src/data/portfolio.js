@@ -85,7 +85,7 @@ export const projects = [
     category: 'Web Apps',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop',
     tags: ['React', 'Tailwind CSS', 'JavaScript'],
-    url: '#',
+    url: 'https://edumartx.netlify.app/',
   },
   {
     id: 2,
@@ -97,6 +97,17 @@ export const projects = [
     tags: ['React', 'Supabase', 'Tailwind CSS'],
     url: 'https://ggsf-official.netlify.app/#/',
   },
+   {
+    id: 4,
+    title: 'KhataOne',
+    description:
+      '**TeaKhata** is a smart credit management app for tracking customers, udhari, payments, and reminders.',
+    category: 'E-commerce',
+    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8fDA%3D',
+    tags: ['React', 'Tailwind CSS', 'JavaScript'],
+    url: 'https://khataone.netlify.app/',
+  },
+ 
   {
     id: 6,
     title: 'Codewitzzs Home page Design  ',
@@ -118,16 +129,6 @@ export const projects = [
   //   url: '#',
   // },
   
-  {
-    id: 4,
-    title: 'TeaKhata',
-    description:
-      '**TeaKhata** is a smart credit management app for tracking customers, udhari, payments, and reminders.',
-    category: 'E-commerce',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8fDA%3D',
-    tags: ['React', 'Tailwind CSS', 'JavaScript'],
-    url: '#',
-  },
   {
     id: 3,
     title: 'Portfolio Website',
