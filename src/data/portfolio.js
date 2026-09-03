@@ -103,7 +103,7 @@ export const projects = [
     description:
       '**TeaKhata** is a smart credit management app for tracking customers, udhari, payments, and reminders.',
     category: 'E-commerce',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8fDA%3D',
+    image: 'src/assets/Khataone-p.png',
     tags: ['React', 'Tailwind CSS', 'JavaScript'],
     url: 'https://khataone.netlify.app/',
   },
